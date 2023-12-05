@@ -1,0 +1,126 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ecf0f1">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:layout_margin="16dp"
+        android:src="@drawable/telefono"
+        />
+
+    <ScrollView
+        android:id="@+id/activity_detail_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/activity_detail_pet_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    tools:src="@drawable/chester"/>
+
+                <TextView
+                    android:id="@+id/activity_detail_pet_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/activity_detail_pet_image"
+                    android:padding="16dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp"
+                    tools:text="Chester"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_detail_owner_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:padding="16dp"
+                    android:layout_marginTop="16dp"
+                    tools:text="Actual Dueño: Ing Karla ITST" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <TextView
+                    android:id="@+id/activity_detail_owner_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:padding="16dp"
+                    android:layout_marginTop="8dp"
+                    tools:text="Telefono: 231-112-9346" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/white"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/activity_detail_pet_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                tools:text="Descripcion: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+
+
+            <Button
+                android:id="@+id/btnAdopt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Adoptar"
+                android:backgroundTint="@color/colorAccent2"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="24dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:elevation="2dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_anchor="@id/activity_detail_scroll_view"
+                app:layout_anchorGravity="bottom"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

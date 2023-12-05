@@ -1,0 +1,43 @@
+ <?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/user_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola mundo" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activity_main_pet_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/logout"
+        android:text="Cerrar sesión"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_gravity=""
+        android:background="@color/colorAccent3"/>
+
+
+</LinearLayout>

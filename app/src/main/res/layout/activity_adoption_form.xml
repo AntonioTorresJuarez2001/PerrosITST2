@@ -1,0 +1,80 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Other Views -->
+
+    <TextView
+        android:id="@+id/RazonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Por qué te gustaría adoptar una mascota?"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/RazonEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Cuentanos la razón"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/DormirTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿En qué parte dormirá la mascota?"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/DormirEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Ej: En mi cama, patio, una casa..."
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/TelefonoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proporcionanos tu número de teléfono"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/TelefonoEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Ingresa tu número de teléfono"
+        android:inputType="phone" />
+    <TextView
+        android:id="@+id/CuentanosTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Platicanos un poco sobre ti.!"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/CuentanosEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Ej: Soy maestro de ingles, amante de los animales..."
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/EnviarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar Formulario"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add more TextViews and EditTexts for additional form fields if needed -->
+
+</LinearLayout>

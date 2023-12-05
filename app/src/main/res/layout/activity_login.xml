@@ -1,0 +1,78 @@
+<!-- res/layout/activity_login.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Contenido de tu diseño actual -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/perrofondo2"
+        android:padding="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usuario"
+            android:inputType="text"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Iniciar Sesión"
+            android:radius="80dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" /> <!-- Espacio entre los botones -->
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent2"
+            android:text="Registrarse" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/RegisterNow"
+            android:text="Haga clic para iniciar sesión"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+</RelativeLayout>
